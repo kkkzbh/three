@@ -100,7 +100,7 @@ void priQB(char arr[HA][LE],int x,int y)
 
 void PlayerMove(char arr[HA][LE], int a, int b)
 {
-	printf("«Î—°‘Òƒ˙œÎ∑≈µƒŒª÷√:>");
+	printf("ËØ∑ÈÄâÊã©ÊÇ®ÊÉ≥ÊîæÁöÑ‰ΩçÁΩÆ:>");
 	int x = 0, y = 0;
 
 	while(1)
@@ -114,8 +114,8 @@ void PlayerMove(char arr[HA][LE], int a, int b)
 		}
 		else
 		{
-			printf(" ‰µƒ”–Œ Ã‚£¨÷ÿ ‰£°\n");
-			printf("«Î—°‘Òƒ˙œÎ∑≈µƒŒª÷√:>");
+			printf("ËæìÁöÑÊúâÈóÆÈ¢òÔºåÈáçËæìÔºÅ\n");
+			printf("ËØ∑ÈÄâÊã©ÊÇ®ÊÉ≥ÊîæÁöÑ‰ΩçÁΩÆ:>");
 
 		}
 	}
@@ -125,8 +125,8 @@ void PlayerMove(char arr[HA][LE], int a, int b)
 
 void ComputerMove(char arr[HA][LE],int m,int n)
 {
-	printf("µÁƒ‘:∏√Œ“¡À£°£°£°\n");
-	Sleep(1000);
+		for (int j = 0;j < LE;++j)
+				return 1;
 	
 	while (1)
 	{
@@ -202,7 +202,7 @@ void game()
 		}
 	}
 	priQB(arr,HA,LE);
-	printf("Tips: ‰»Î∏Ò ΩŒ™°˙–– ¡–\n");
+	printf("Tips:ËæìÂÖ•Ê†ºÂºè‰∏∫‚ÜíË°å Âàó\n");
 
 	char check = 0;
 
@@ -220,19 +220,19 @@ void game()
 		if (check == 'X')
 		{
 			Sleep(300);
-			printf("πßœ≤ªÒ §£°\n");
+			printf("ÊÅ≠ÂñúËé∑ËÉúÔºÅ\n");
 			break;
 		}
 		else if (check == 'O')
 		{
 			Sleep(300);
-			printf("≈££°ƒ‹»√»ı÷«”Æ¡À£°\n");
+			printf("ÁâõÔºÅËÉΩËÆ©Âº±Êô∫Ëµ¢‰∫ÜÔºÅ\n");
 			break;
 		}
 		else if (check == 'Y')
 		{
 			Sleep(300);
-			printf("∆Ωæ÷£¨«ø£°£°£°£°\n");
+			printf("Âπ≥Â±ÄÔºåÂº∫ÔºÅÔºÅÔºÅÔºÅ\n");
 			break;
 		}
 		else;
@@ -247,23 +247,23 @@ void game()
 		if (check == 'X')
 		{
 			Sleep(300);
-			printf("πßœ≤ªÒ §£°\n");
-			printf("ÀŸÀŸ‘Ÿ¿¥“ª∞—£°£°\n");
+			printf("ÊÅ≠ÂñúËé∑ËÉúÔºÅ\n");
+			printf("ÈÄüÈÄüÂÜçÊù•‰∏ÄÊääÔºÅÔºÅ\n");
 			break;
 		}
 		else if (check == 'O')
 		{
 			Sleep(300);
-			printf("≈££°ƒ‹»√»ı÷«”Æ¡À£°\n");
-			printf("ÀŸÀŸ‘Ÿ¿¥“ª∞—£°£°\n");
+			printf("ÁâõÔºÅËÉΩËÆ©Âº±Êô∫Ëµ¢‰∫ÜÔºÅ\n");
+			printf("ÈÄüÈÄüÂÜçÊù•‰∏ÄÊääÔºÅÔºÅ\n");
 
 			break;
 		}
 		else if (check == 'Y')
 		{
 			Sleep(300);
-			printf("∆Ωæ÷£¨«ø£°£°£°£°\n");
-			printf("ÀŸÀŸ‘Ÿ¿¥“ª∞—£°£°\n");
+			printf("Âπ≥Â±ÄÔºåÂº∫ÔºÅÔºÅÔºÅÔºÅ\n");
+			printf("ÈÄüÈÄüÂÜçÊù•‰∏ÄÊääÔºÅÔºÅ\n");
 
 			break;
 		}
