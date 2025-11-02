@@ -3,8 +3,8 @@
 
 void menu()
 {
-	char arr1[9] = { "         "};
-	char arr2[9] = { "Welcome!" };
+	char arr1[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
+	char arr2[9] = {'W', 'e', 'l', 'c', 'o', 'm', 'e', '!', '\0'};
 	
 	for (int i = 0;i < 9;i++)
 	{
@@ -15,10 +15,10 @@ void menu()
 	}
 
 	system("cls");
-	char arr[] = { "**********************************" };
-	char arr4[] = { "                                  " };
+	char arr[] = "**********************************";
+	char arr4[35] = {0};
 
-	for (int left = 0, right = sizeof(arr) / sizeof(arr[1]) - 2;left <= right;left++, right--)
+	for (int left = 0, right = sizeof(arr) / sizeof(arr[0]) - 2;left <= right;left++, right--)
 	{
 		arr4[left] = arr[left]; arr4[right] = arr[right];
 		printf("%s", arr4);
@@ -30,8 +30,8 @@ void menu()
 	printf("**********************************\n");
 
 
-	char arr5[] = {"                                  "};
-	for (int left = 0, right = sizeof(arr) / sizeof(arr[1]) - 2;left <= right;left++, right--)
+	char arr5[35] = {0};
+	for (int left = 0, right = sizeof(arr) / sizeof(arr[0]) - 2;left <= right;left++, right--)
 	{
 		arr5[left] = arr[left]; arr5[right] = arr[right];
 		printf("%s", arr5);
@@ -44,8 +44,8 @@ void menu()
 	}
 	printf("**********************************\n");
 
-	char arr6[] = { "                                  " };
-	for (int left = 0, right = sizeof(arr) / sizeof(arr[1]) - 2;left <= right;left++, right--)
+	char arr6[35] = {0};
+	for (int left = 0, right = sizeof(arr) / sizeof(arr[0]) - 2;left <= right;left++, right--)
 	{
 		arr6[left] = arr[left]; arr6[right] = arr[right];
 		printf("%s", arr6);
@@ -125,9 +125,6 @@ void PlayerMove(char arr[HA][LE], int a, int b)
 
 void ComputerMove(char arr[HA][LE],int m,int n)
 {
-		for (int j = 0;j < LE;++j)
-				return 1;
-	
 	while (1)
 	{
 		int x = rand() % 3;
@@ -137,9 +134,7 @@ void ComputerMove(char arr[HA][LE],int m,int n)
 			arr[x][y] = 'O';
 			break;
 		}
-		else;
 	}
-
 }
 
 
@@ -147,7 +142,7 @@ int IsTie(char arr[HA][LE], int m, int n)
 {
 	for (int i = 0;i < HA;++i)
 	{
-		for (int j = 0;j < LE;++i)
+		for (int j = 0;j < LE;++j)
 		{
 			if (arr[i][j] == ' ')
 			return 1;
